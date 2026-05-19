@@ -1,148 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <head>
-    <!-- Include Bootstrap and other necessary CSS libraries -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css"> <!-- Your custom stylesheet -->
-    <!-- Add your other necessary head content -->
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/devicons@1.8.0/css/devicons.min.css">
-
-    <title>My Portfolio</title>
-
-    <!-- Add styles for animation -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Gaurav Dahal - full-stack and mobile app developer building secure web applications, APIs, mobile products, and AI-aware systems.">
+  <title>Gaurav Dahal | Full-stack &amp; Mobile Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 
+<body data-page="home">
+  <div class="site-shell">
+    <div class="mesh mesh-one"></div>
+    <div class="mesh mesh-two"></div>
+    <div class="noise"></div>
 
+    <header class="topbar" data-reveal>
+      <a class="brand" href="index.html" aria-label="Gaurav Dahal home">
+        <span class="brand-mark">GD</span>
+        <span>
+          <strong>Gaurav Dahal</strong>
+          <small>Full-stack &amp; Mobile Developer</small>
+        </span>
+      </a>
 
-<body>
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a class="nav-link" data-page-link="home" href="index.html">Home</a>
+        <a class="nav-link" data-page-link="about" href="about.html">About</a>
+        <a class="nav-link" data-page-link="skills" href="skills.html">Skills</a>
+        <a class="nav-link" data-page-link="projects" href="projects.html">Projects</a>
+        <a class="nav-link" data-page-link="contact" href="contact.html">Contact</a>
+      </nav>
+    </header>
 
-<!-- Navigation Bar with Hamburger Menu -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-        <a class="navbar-brand" href="#">My Portfolio</a>
-        <!-- Button that triggers the collapse behavior on smaller screens -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
-                <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-            </ul>
+    <button class="drawer-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false"
+      aria-controls="mobileDrawer">
+      <span></span>
+      <span></span>
+    </button>
+
+    <div class="drawer-overlay" data-close-drawer></div>
+    <aside class="mobile-drawer" id="mobileDrawer" aria-label="Mobile navigation">
+      <div class="drawer-header">
+        <span class="brand-mark">GD</span>
+        <button class="drawer-close" type="button" aria-label="Close navigation menu" data-close-drawer>&times;</button>
+      </div>
+      <a class="drawer-link" data-page-link="home" href="index.html"><span>H</span> Home</a>
+      <a class="drawer-link" data-page-link="about" href="about.html"><span>A</span> About</a>
+      <a class="drawer-link" data-page-link="skills" href="skills.html"><span>S</span> Skills</a>
+      <a class="drawer-link" data-page-link="projects" href="projects.html"><span>P</span> Projects</a>
+      <a class="drawer-link" data-page-link="contact" href="contact.html"><span>C</span> Contact</a>
+    </aside>
+
+    <main>
+      <section class="hero section" id="home">
+        <div class="hero-copy" data-reveal>
+          <h1>Gaurav Dahal</h1>
+          <p class="hero-lede">
+            I am full-stack developer who builds web applications, APIs, mobile apps, and real-time
+            systems. I work with the MERN stack, Flutter, React Native, Django, and databases while staying curious
+            about AI, machine learning, and the technologies shaping modern software.
+          </p>
+          <div class="role-line" aria-label="Current role">
+            <span id="roleText">Full-stack Developer</span>
+            <i></i>
+          </div>
+          <!-- <div class="hero-actions">
+            <a class="btn primary" href="https://github.com/GauravDahalCodes" target="_blank" rel="noreferrer">View
+              GitHub</a>
+            <a class="btn secondary" href="contact.html">Start a Conversation</a>
+          </div> -->
+          <div class="social-row" aria-label="Social profiles">
+            <a href="https://github.com/GauravDahalCodes" target="_blank" rel="noreferrer" aria-label="GitHub profile">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.69c-2.78.6-3.37-1.18-3.37-1.18-.46-1.16-1.12-1.47-1.12-1.47-.91-.62.07-.61.07-.61 1.01.07 1.54 1.04 1.54 1.04.9 1.53 2.36 1.09 2.93.83.09-.65.35-1.09.64-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.6 9.6 0 0 1 12 6.01c.85 0 1.7.11 2.5.34 1.9-1.29 2.74-1.02 2.74-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z" />
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/ma_chai_gaurey/" target="_blank" rel="noreferrer"
+              aria-label="Instagram profile">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M7.8 2h8.4A5.8 5.8 0 0 1 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8A5.8 5.8 0 0 1 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2Zm0 2A3.8 3.8 0 0 0 4 7.8v8.4A3.8 3.8 0 0 0 7.8 20h8.4a3.8 3.8 0 0 0 3.8-3.8V7.8A3.8 3.8 0 0 0 16.2 4H7.8Zm8.7 2.35a1.15 1.15 0 1 1 0 2.3 1.15 1.15 0 0 1 0-2.3ZM12 7.35A4.65 4.65 0 1 1 12 16.65 4.65 4.65 0 0 1 12 7.35Zm0 2A2.65 2.65 0 1 0 12 14.65 2.65 2.65 0 0 0 12 9.35Z" />
+              </svg>
+            </a>
+            <a href="https://www.facebook.com/hero.gaurav.5" target="_blank" rel="noreferrer"
+              aria-label="Facebook profile">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M14 8.7V6.9c0-.77.5-.95.86-.95H17V2.16L14.05 2C10.78 2 10 4.45 10 6.02V8.7H7v4h3V22h4v-9.3h2.72l.48-4H14Z" />
+              </svg>
+            </a>
+          </div>
+          <!-- <div class="signal-grid">
+            <div><strong>30</strong><span>Public GitHub repos</span></div>
+            <div><strong>API</strong><span>REST, WebSocket, auth</span></div>
+            <div><strong>Mobile</strong><span>Flutter, React Native</span></div>
+          </div> -->
         </div>
-    </div>
-</nav>
 
-<!-- Home Section -->
-<section id="home">
-    <div class="container">
-        <header class="my-5">
-            <div class="home-container">
-                <div class="homeright">
-                    <img src="okwithit.png" alt="Profile Picture" class="profile-picture">
-                </div>
-                <div class="homecol">
-                    <h1 class="display-5"><b>Gaurab Dahal</b></h1>
-                    <h2 class="display-4" id="roleText">
-                        <span id="role1">Software Engineer</span>
-                        <span id="role2" class="hidden">Django Developer</span>
-                        <span id="role3" class="hidden">AI / ML Enthusiast</span>
-                    </h2>
-                    <div class="social-media mt-4">
-                        <ul class="list-inline">
-                            <li class="list-inline-item"><a href="https://www.facebook.com/hero.gaurav.5"
-                                    target="_blank" class="fa fa-facebook"></a></li>
-                            <li class="list-inline-item"><a href="https://github.com/CodeWithVaruag" target="_blank"
-                                    class="fa fa-github"></a></li>
-                            <li class="list-inline-item"><a href="https://www.instagram.com/ma_chai_gaurey/"
-                                    target="_blank" class="fa fa-instagram"></a></li>
-                        </ul>
-                    </div>
-                    <blockquote class="blockquote">
-                        <p class="mb-0">"Discovering new things in the world of technologies "</p>
-                    </blockquote>
-                </div>
+        <div class="hero-visual" data-parallax data-reveal>
+          <div class="profile-card glass">
+            <img src="okwithit.png" alt="Portrait of Gaurav Dahal" class="profile-image">
+            <div class="profile-meta">
+              <span class="status-dot"></span>
+              <div>
+                <strong>Full-stack engineer</strong>
+                <small>Web apps, mobile apps, APIs, AI-aware workflows</small>
+              </div>
             </div>
-        </header>
-    </div>
-</section>
+          </div>
+          <div class="floating-card code-card glass">
+            <span>api/status</span>
+            <strong>99ms</strong>
+            <small>Express route response</small>
+          </div>
+          <div class="floating-card stack-card glass">
+            <span>Stack</span>
+            <strong>React + Node + Flutter + AI tools</strong>
+          </div>
+        </div>
+      </section>
+    </main>
 
+    <footer>
+      <span>&copy; 2026 Gaurav Dahal</span>
+    </footer>
+  </div>
 
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const roleText = document.getElementById('roleText');
-        const roles = [
-            { role: 'Software Engineer', delay: 0 },
-            { role: 'Django Developer', delay: 1500 }, // Delay of 5 seconds after role 1 disappears
-            { role: 'AI / ML Enthusiast', delay: 1500 } // Delay of 5 seconds after role 2 disappears
-        ];
-
-        let currentIndex = 0;
-
-        function animateRoles() {
-            const currentRole = roles[currentIndex];
-
-            typeRole(currentRole.role, () => {
-                setTimeout(() => {
-                    eraseRole(() => {
-                        currentIndex = (currentIndex + 1) % roles.length; // Move to the next role
-                        animateRoles();
-                    });
-                }, currentRole.delay);
-            });
-        }
-
-        function typeRole(text, callback) {
-            let index = 0;
-            const typingInterval = setInterval(() => {
-                roleText.innerHTML = text.slice(0, index);
-                index++;
-
-                if (index > text.length) {
-                    clearInterval(typingInterval);
-                    setTimeout(callback, 1000); // Pause for 1 second after typing
-                }
-            }, 50); // Adjust typing speed (decrease for faster, increase for slower)
-
-            // Toggle cursor visibility for blinking effect
-            const cursor = document.createElement('span');
-            cursor.className = 'cursor';
-            roleText.appendChild(cursor);
-
-            setInterval(() => {
-                cursor.style.visibility = (cursor.style.visibility === 'visible') ? 'hidden' : 'visible';
-            }, 500); // Adjust blinking speed
-        }
-
-        function eraseRole(callback) {
-            let text = roleText.textContent;
-            let index = text.length;
-            const erasingInterval = setInterval(() => {
-                roleText.innerHTML = text.slice(0, index);
-                index--;
-
-                if (index === 0) {
-                    clearInterval(erasingInterval);
-                    callback();
-                }
-            }, 30); // Adjust erasing speed (decrease for faster, increase for slower)
-        }
-
-        animateRoles();
-    });
-</script>
-
-
+  <script src="script.js"></script>
 </body>
+
 </html>
